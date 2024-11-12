@@ -116,14 +116,14 @@ const calcDisplaySummary = function (movements) {
 calcDisplaySummary(account1.movements);
 
 // create username
-const createUsername = function (users) {
-  users.forEach(user => {
-    user.username = user.owner
-      .toLowerCase()
-      .split(' ')
-      .map(name => name[0])
-      .join('');
-  });
-};
+// const createUsername = function (users) {
+//   users.forEach(user => {
+//     user.username = user.owner
+//       .toLowerCase()
+//       .split(' ')
+//       .map(name => name[0])
+//       .join('');
+//   });
+// };
 
-createUsername(accounts);
+// createUsername(accounts);
