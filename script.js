@@ -82,12 +82,12 @@ const displayMovements = function (movements) {
 
 displayMovements(account1.movements);
 
-const calcDisplayBalance = function (movements) {
-  const balance = movements.reduce((acc, curr) => acc + curr, 0);
-  labelBalance.textContent = `${balance}€`;
-};
+// const calcDisplayBalance = function (movements) {
+//   const balance = movements.reduce((acc, curr) => acc + curr, 0);
+//   labelBalance.textContent = `${balance}€`;
+// };
 
-calcDisplayBalance(account1.movements);
+// calcDisplayBalance(account1.movements);
 
 const calcDisplaySummary = function (movements) {
   // sum incomes and display it
