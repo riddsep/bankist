@@ -64,6 +64,7 @@ const displayMovements = function (movements) {
   containerMovements.innerHTML = '';
 
   movements.forEach(function (move, index) {
+    // jika movements > 0 type = deposit : withdrawal
     const type = move > 0 ? 'deposit' : 'withdrawal';
     const html = `
       
@@ -95,6 +96,7 @@ const createUsername = function (users) {
 createUsername(accounts);
 
 const calcDisplayBalance = function (movements) {
+  // Akumulasi balance
   const balance = movements.reduce((acc, curr) => acc + curr, 0);
   labelBalance.textContent = `${balance}€`;
 };
