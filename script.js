@@ -147,21 +147,21 @@ btnLogin.addEventListener('click', function (e) {
   updateUi();
 });
 
-btnTransfer.addEventListener('click', function (e) {
-  e.preventDefault();
-  const amount = Number(inputTransferAmount.value);
-  const receiverAcc = accounts.find(
-    acc => acc.username === inputTransferTo.value
-  );
+// btnTransfer.addEventListener('click', function (e) {
+//   e.preventDefault();
+//   const amount = Number(inputTransferAmount.value);
+//   const receiverAcc = accounts.find(
+//     acc => acc.username === inputTransferTo.value
+//   );
 
-  if (
-    amount > 0 &&
-    currentAccount.balance >= amount &&
-    receiverAcc &&
-    receiverAcc?.username !== currentAccount.username
-  ) {
-    currentAccount.movements.push(-amount);
-    receiverAcc.movements.push(amount);
-    updateUi();
-  }
-});
+//   if (
+//     amount > 0 &&
+//     currentAccount.balance >= amount &&
+//     receiverAcc &&
+//     receiverAcc?.username !== currentAccount.username
+//   ) {
+//     currentAccount.movements.push(-amount);
+//     receiverAcc.movements.push(amount);
+//     updateUi();
+//   }
+// });
