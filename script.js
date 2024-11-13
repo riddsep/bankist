@@ -1,8 +1,5 @@
 'use strict';
 
-/////////////////////////////////////////////////
-// BANKIST APP
-
 // Data
 const account1 = {
   owner: 'Jonas Schmedtmann',
@@ -59,71 +56,3 @@ const inputTransferAmount = document.querySelector('.form__input--amount');
 const inputLoanAmount = document.querySelector('.form__input--loan-amount');
 const inputCloseUsername = document.querySelector('.form__input--user');
 const inputClosePin = document.querySelector('.form__input--pin');
-
-const displayMovements = function (movements) {
-  containerMovements.innerHTML = '';
-
-  movements.forEach(function (move, index) {
-    const type = move > 0 ? 'deposit' : 'withdrawal';
-    const html = `
-      
-        <div class="movements__row">
-          <div class="movements__type movements__type--${type}">${
-      index + 1
-    } ${type}</div>
-          <div class="movements__date">3 days ago</div>
-          <div class="movements__value">${move}€</div>
-        </div>
-     `;
-
-    containerMovements.insertAdjacentHTML('afterbegin', html);
-  });
-};
-
-displayMovements(account1.movements);
-
-// const calcDisplayBalance = function (movements) {
-//   const balance = movements.reduce((acc, curr) => acc + curr, 0);
-//   labelBalance.textContent = `${balance}€`;
-// };
-
-// calcDisplayBalance(account1.movements);
-
-const calcDisplaySummary = function (movements) {
-  // sum incomes and display it
-  const incomes = movements
-    .filter(move => move > 0)
-    .reduce((acc, curr) => acc + curr, 0);
-  labelSumIn.textContent = `${incomes}€`;
-
-  // sum out and display it
-  const outcomes = movements
-    .filter(move => move < 0)
-    .reduce((acc, curr) => acc + curr, 0);
-  labelSumOut.textContent = `${Math.abs(outcomes)}€`;
-
-  // sum interest and display it
-  const interest = movements
-    .filter(move => move > 0)
-    .map(deposit => (deposit * 1.2) / 100)
-    .filter((int, i, arr) => {
-      return int >= 1;
-    })
-    .reduce((acc, curr) => acc + curr, 0);
-  labelSumInterest.textContent = `${interest}€`;
-};
-
-calcDisplaySummary(account1.movements);
-
-// create username
-const createUsername = function (users) {
-  users.forEach(user => {
-    user.username = user.owner
-      .toLowerCase()
-      .split(' ')
-      .map(name => name[0])
-      .join('');
-  });
-};
-
-createUsername(accounts);
