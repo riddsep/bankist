@@ -150,6 +150,7 @@ btnLogin.addEventListener('click', function (e) {
   updateUi(currentAccount);
 });
 
+// Transfer
 btnTransfer.addEventListener('click', function (e) {
   e.preventDefault();
   const amount = Number(inputTransferAmount.value);
@@ -169,6 +170,7 @@ btnTransfer.addEventListener('click', function (e) {
   }
 });
 
+// Loan
 btnLoan.addEventListener('click', function (e) {
   e.preventDefault();
 
