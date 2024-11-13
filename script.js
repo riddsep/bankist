@@ -180,6 +180,7 @@ btnLoan.addEventListener('click', function (e) {
   }
 });
 
+// Close account
 btnClose.addEventListener('click', function (e) {
   e.preventDefault();
 
