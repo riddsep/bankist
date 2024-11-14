@@ -1,6 +1,5 @@
 'use strict';
 
-/////////////////////////////////////////////////
 // BANKIST APP
 
 // DIFFERENT DATA! Contains movement dates, currency and locale
