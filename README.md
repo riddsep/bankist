@@ -10,8 +10,10 @@ Bankist adalah aplikasi perbankan sederhana yang memungkinkan pengguna untuk mel
 
    - Pengguna dapat login menggunakan username dan PIN yang telah dibuat sebelumnya.
    - Username dibuat berdasarkan inisial nama pengguna.
-   - User 1: username: js pin: 1111
-   - User 2: username: jd pin: 2222
+   - User 1:
+   - Username: js pin: 1111
+   - User 2:
+   - Username: jd pin: 2222
 
 2. **Transfer Uang**
 
