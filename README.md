@@ -32,5 +32,3 @@ Bankist adalah aplikasi perbankan sederhana yang memungkinkan pengguna untuk mel
    - Menampilkan daftar transaksi (deposit & withdrawal).
    - Menampilkan saldo total pengguna.
    - Menampilkan ringkasan uang masuk (in), uang keluar (out), dan bunga (interest).
-
----
