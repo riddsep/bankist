@@ -6,10 +6,12 @@ Bankist adalah aplikasi perbankan sederhana yang memungkinkan pengguna untuk mel
 
 ## 🌟 Fitur Utama
 
-1. **Login Palsu (Fake Login)**
+1. **Fake Login**
 
    - Pengguna dapat login menggunakan username dan PIN yang telah dibuat sebelumnya.
    - Username dibuat berdasarkan inisial nama pengguna.
+   - User 1: username: js pin: 1111
+   - User 2: username: jd pin: 2222
 
 2. **Transfer Uang**
 
@@ -30,11 +32,3 @@ Bankist adalah aplikasi perbankan sederhana yang memungkinkan pengguna untuk mel
    - Menampilkan ringkasan uang masuk (in), uang keluar (out), dan bunga (interest).
 
 ---
-
-## 🖥️ Cara Menggunakan
-
-1. Clone repositori ini:
-   ```bash
-   git clone <repository-url>
-   cd bankist-app
-   ```
