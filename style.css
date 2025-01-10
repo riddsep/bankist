@@ -11,8 +11,8 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: #444;
-  background-color: #f3f3f3;
+  color: #edfefe;
+  background-color: #082832;
   height: 100vh;
   padding: 2rem;
 }
@@ -46,7 +46,7 @@ nav {
   width: 12rem;
   border-radius: 10rem;
   margin-right: 1rem;
-  color: inherit;
+  color: #000;
   border: 1px solid #fff;
   transition: all 0.3s;
 }
@@ -64,7 +64,7 @@ nav {
   border: none;
   background: none;
   font-size: 2.2rem;
-  color: inherit;
+  color: #6de9f3;
   cursor: pointer;
   transition: all 0.3s;
 }
@@ -74,7 +74,7 @@ nav {
 .btn--sort:hover,
 .btn--sort:focus {
   outline: none;
-  color: #777;
+  color: #13768b;
 }
 
 /* MAIN */
@@ -108,7 +108,7 @@ nav {
 
 .balance__date {
   font-size: 1.4rem;
-  color: #888;
+  color: #ffffff;
 }
 
 .balance__value {
@@ -117,11 +117,14 @@ nav {
 }
 
 /* MOVEMENTS */
+
 .movements {
   grid-row: 2 / span 3;
   background-color: #fff;
   border-radius: 1rem;
-  overflow: scroll;
+  overflow-y: scroll;
+  scrollbar-color: #17cf97 #e0e0e0;
+  scrollbar-width: thin;
 }
 
 .movements__row {
