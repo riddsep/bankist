@@ -74,7 +74,7 @@ nav {
 .btn--sort:hover,
 .btn--sort:focus {
   outline: none;
-  color: #13768b;
+  color: #fff;
 }
 
 /* MAIN */
@@ -197,6 +197,7 @@ nav {
   margin-left: auto;
   border: none;
   background: none;
+  color: white;
   font-size: 1.3rem;
   font-weight: 500;
   cursor: pointer;
